@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Jam Users Wiki Fandom Profile Finder</title>
+  </head>
+  <body>
+    <h1>Animal Jam Users Wiki Profile Finder</h1>
+    <h2>NOTE: PLEASE MAKE SURE TO USE THE CORRECT CAPITALIZATION!!!!</h2>
+    <input id="wanted" type="text">
+    <a href="" id="output"></a>
+    <button onclick="find()">Search</button>
+    <script>
+    function find() {
+      document.getElementById("output").innerHTML = document.getElementById("wanted").value;
+      document.getElementById("output").href = "https://animaljamusers.fandom.com/wiki/User:" + document.getElementById("wanted").value;
+    }
+    </script>
+  </body>
+</html>
